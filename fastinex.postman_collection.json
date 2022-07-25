@@ -1,0 +1,174 @@
+{
+  "info": {
+    "_postman_id": "ff6a6693-3c8f-46a1-9062-2c3acaf1f414",
+    "name": "fastinex",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "21971734"
+  },
+  "item": [
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "Get all",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{API_URL}}/users",
+              "host": ["{{API_URL}}"],
+              "path": ["users"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Ilsa Hatch\",\n  \"email\": \"ihatch1@msu.edu\",\n  \"password\": \"k3SFUNx\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{API_URL}}/users",
+              "host": ["{{API_URL}}"],
+              "path": ["users"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n        \"name\": \"2345\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{API_URL}}/users/62dd5ffb91b70c114bd0add1",
+              "host": ["{{API_URL}}"],
+              "path": ["users", "62dd5ffb91b70c114bd0add1"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{API_URL}}/users/62dd5ffb91b70c114bd0add1",
+              "host": ["{{API_URL}}"],
+              "path": ["users", "62dd5ffb91b70c114bd0add1"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Product",
+      "item": [
+        {
+          "name": "Get all",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{API_URL}}/products",
+              "host": ["{{API_URL}}"],
+              "path": ["products"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Lettuce - Sea / Sea Asparagus\",\n  \"price\": \"$7.86\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{API_URL}}/products/62dd43e478b85fd72edfc6cd",
+              "host": ["{{API_URL}}"],
+              "path": ["products", "62dd43e478b85fd72edfc6cd"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n        \"price\": \"333\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{API_URL}}/products/62dd603091b70c114bd0adda",
+              "host": ["{{API_URL}}"],
+              "path": ["products", "62dd603091b70c114bd0adda"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{API_URL}}/products/62dd603091b70c114bd0adda",
+              "host": ["{{API_URL}}"],
+              "path": ["products", "62dd603091b70c114bd0adda"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Swagger",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:6000/api",
+          "host": ["localhost"],
+          "port": "6000",
+          "path": ["api"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
