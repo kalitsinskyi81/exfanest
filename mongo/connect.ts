@@ -1,7 +1,7 @@
 import mongoose, { Mongoose } from 'mongoose';
 
 const connect = (): Promise<Mongoose> =>
-  mongoose.connect('mongodb+srv://root:password!@exfanest.56g8r.mongodb.net/?retryWrites=true&w=majority', {
+  mongoose.connect(process.env.MONGO_BD_CONNECTION_URI, {
     dbName: 'exfanest'
   });
 

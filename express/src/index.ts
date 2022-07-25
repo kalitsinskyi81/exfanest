@@ -12,7 +12,7 @@ import router from './router';
 connectToMongo();
 
 const app = express();
-const PORT = 4000;
+const PORT: number = +process.env.PORT || 4000;
 
 /* Parse the request */
 app.use(bodyParser.urlencoded({ extended: false }));

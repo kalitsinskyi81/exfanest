@@ -1,0 +1,3 @@
+NODE_ENV=production
+PORT=4000
+MONGO_BD_CONNECTION_URI=mongodb+srv://root:password!@exfanest.56g8r.mongodb.net/?retryWrites=true&w=majority

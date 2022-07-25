@@ -8,13 +8,14 @@ import productRoutes from './productRoutes';
 const app: FastifyInstance = fastify({
   logger: true
 });
+const PORT: number = +process.env.PORT || 5000;
 
 connectToMongo();
 
 app.register(userRoutes, { route: '/users' });
 app.register(productRoutes, { route: '/products' });
 
-app.listen({ port: 5000 }, (error) => {
+app.listen({ port: PORT }, (error) => {
   if (error) {
     app.log.error(error);
     process.exit(1);
