@@ -1,4 +1,4 @@
-# exfanest(Express & Fastify & ~~Nest~~)
+# fastinex(Express & Fastify & ~~Nest~~)
 
 ### Created for learning perspective
 
