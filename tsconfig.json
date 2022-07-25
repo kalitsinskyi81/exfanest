@@ -110,9 +110,19 @@
 
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
-    "skipLibCheck": true
+    "skipLibCheck": true,
     /* Skip type checking all .d.ts files. */
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "incremental": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "noFallthroughCasesInSwitch": false
   },
-  "include": ["fastify/**/*.ts", "express/**/*.ts", "nest_TODO/**/*.ts"],
+  "include": ["fastify/**/*.ts", "express/**/*.ts", "nest/**/*.ts"],
   "exclude": ["node_modules", "**/*.d.ts", "**/*.spec.ts"]
 }

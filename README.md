@@ -9,14 +9,16 @@ npm install
 ```
 
 ## Usage
+
 ```bash
 npm run express:dev
 ```
+
 ```bash
 npm run fastify:dev
 ```
 
-____
+---
 
 ## Postman [workspace](https://app.getpostman.com/join-team?invite_code=e8dd2bc39814080ea0f797980870e672&target_code=2dcd1081411dc044170042cdfa4b5409)
 
@@ -32,12 +34,14 @@ ____
 
 [Fastify env](./Fastify.postman_environment.json)
 
-____
+---
 
-### To fill BD with mock data use 
+### To fill BD with mock data use
+
 ```bash
 npm run mock:users
 ```
+
 ```bash
 npm run mock:products
 ```

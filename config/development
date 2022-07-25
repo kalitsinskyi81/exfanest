@@ -1,0 +1,8 @@
+NODE_ENV=nest
+PORT=6000
+MONGO_BD_CONNECTION_URI=mongodb+srv://kalitsinskij:09042000@cluster0.tp6gc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+JWT_SECRET=1q2w3e4r5t6y7u8i9o
+MAILGUN_API_KEY=b12c4c5d8bd4484e47864d98b4a5909f-c3d1d1eb-10d2f15d
+MAILGUN_API_DOMAIN=sandboxa3986505db5e4ab9b72241d2deafbe09.mailgun.org
+FE_APP_URL=http://localhost:3001
+JS_CODE_MAIL=kalitsinskij.46@gmail.com
